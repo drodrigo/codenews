@@ -1,15 +1,15 @@
-== Codecast
-
+Podcast Central
+============
 A website about mobile development
 
-== Installation
-
+Podcast Central
+============
 git clone https://github.com/evertoncastro/mobcenter.git <br>
 cd codecast <br>
 bundle install <br>
 
 
-== Contact us
+Podcast Central
+============
 
 codecast@gmail.com
-
