@@ -43,3 +43,10 @@ group :development, :test do
   gem 'spring'
 end
 
+group :test do
+   gem "shoulda-matchers", "~> 3.0"
+   gem "rspec-rails"
+   gem "factory_girl_rails"
+   gem "capybara"
+   gem "guard-rspec"
+end
