@@ -49,4 +49,7 @@ group :test do
    gem "factory_girl_rails"
    gem "capybara"
    gem "guard-rspec"
+   gem "mocha"
+   gem 'database_cleaner', github: 'bmabey/database_cleaner'
+
 end

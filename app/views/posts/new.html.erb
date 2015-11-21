@@ -1,0 +1,22 @@
+<% provide(:title, "Novo post") %>
+<section class="new-post-section">
+   Olá
+   <article class="new-post-article">
+         <h1> Criar novo post </h1>
+         <div class="form">
+            <%= form_for(@post) do |f| %>
+            <%= f.label :title,"Título" %>
+            <%= f.text_field :title, class: "form-button" %>
+
+            <%= f.label :body,"Conteúdo" %>
+            <%= f.text_field :body, class: "form-button" %>
+
+            <%= f.label :tag,"Tag" %>
+            <%= f.text_field :tag, class: "form-button" %>
+
+
+            <%= f.submit "Salvar", class: "button" %>
+            <% end %>
+         </div>
+   </article>
+</section>
