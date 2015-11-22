@@ -1,0 +1,13 @@
+<% provide(:title, 'Posts') %>
+<section class="posts-section">
+   <article class="posts-article">
+      <h1>Posts</h1>
+       <% @posts.each do |p| %>
+            <p>Post id: <%= p.id %></p>
+            <p> <%= p.title %></p>
+            <p> <%= p.body %></p>
+            <p> <%= p.tag %></p>
+            <hr>
+       <% end %>
+   </article>
+</section>
