@@ -1,8 +1,13 @@
+require 'api_constraints'
+
 Rails.application.routes.draw do
   get 'static_pages/index'
 
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+  namespace :api, defaults: {format: 'json'} do
+     scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
+        resources :posts
+     end
+  end
 
   # You can have the root of your site routed with "root"
    root 'static_pages#home'
