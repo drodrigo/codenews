@@ -28,9 +28,11 @@ describe PostsController, :type => :controller do
    end
    describe "GET #show" do
       it "should get the first post " do
-          #TODO: Finish it.
-          #get :show, id: 1
-          #expect(assigns(:post)).to eq(Post.find(1))
+          post :create, post: FactoryGirl.attributes_for(:post)
+          post = FactoryGirl.build(:post)
+          get :show, id: post.id
+          expect(assigns(:post)).to eq(Post.find(post.id))
       end
+
    end
 end
