@@ -30,6 +30,7 @@ describe PostsController, :type => :controller do
       it "should get the first post " do
           post :create, post: FactoryGirl.attributes_for(:post)
           post = FactoryGirl.build(:post)
+          post.id = 1
           get :show, id: post.id
           expect(assigns(:post)).to eq(Post.find(post.id))
       end
