@@ -1,13 +1,12 @@
 <% provide(:title, 'Posts') %>
-<section class="posts-section">
-   <article class="posts-article">
-      <h1>Posts</h1>
-       <% @posts.each do |p| %>
-            <p>Post id: <%= p.id %></p>
-            <p> <%= link_to p.title, p %> </p>
-            <p> <%= p.body %></p>
-            <p> <%= p.tag %></p>
-            <hr>
-       <% end %>
-   </article>
-</section>
+<div id="wrapper-posts">
+   <div class="box-posts">
+         <% @posts.each do |p| %>
+            <article class="tile">
+               <span class="post-tag"><%= p.tag %></span>
+               <p class="title"><%= p.title %></p>
+               <span class="created_at"><%= p.created_at.strftime("%b %d, %Y") %></span>
+            </article>
+         <% end %>
+   </div>
+</div>

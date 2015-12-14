@@ -1,6 +1,18 @@
 require 'api_constraints'
 
 Rails.application.routes.draw do
+  get 'user/index'
+
+  get 'user/new'
+
+  get 'user/create'
+
+  get 'user/edit'
+
+  get 'user/show'
+
+  get 'user/destroy'
+
   get 'static_pages/index'
 
   namespace :api, defaults: {format: 'json'} do
@@ -10,7 +22,7 @@ Rails.application.routes.draw do
   end
 
   # You can have the root of your site routed with "root"
-   root 'static_pages#home'
+   root "posts#index"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

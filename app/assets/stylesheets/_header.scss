@@ -1,0 +1,25 @@
+@import "variables";
+section.header-section{
+   header{
+      &.main-header{
+         background-image: url('http://static1.squarespace.com/static/52444aeee4b0a6b4ebac530f/524457e8e4b0d08691bdabc5/5360026ee4b08c41d0c61cb5/1400450209809/code_screenshot.jpg?format=1500w');
+         background-size: cover;
+         width: 100%;
+         min-height: 350px;
+         text-align: center;
+
+         img{
+            &.banner{
+            }
+         }
+         p{
+            font-family: $main-font;
+            font-size: 30px;
+            margin: 0 0 40px 0;
+            color: white;
+            font-weight: 900;
+
+         }
+      }
+   }
+}
