@@ -1,17 +1,18 @@
 @import "variables";
 section.header-section{
    header{
-      &.main-header{
-         background-image: url('http://static1.squarespace.com/static/52444aeee4b0a6b4ebac530f/524457e8e4b0d08691bdabc5/5360026ee4b08c41d0c61cb5/1400450209809/code_screenshot.jpg?format=1500w');
+      article.navigation{
+         background-color: #f5f5f5;
+         img.logo{
+            height: 100px;
+         }
+      }
+      article.header-article{
+         background-image: url('http://codecondo.com/wp-content/uploads/2014/02/Top-5-Web-Programming-Languages-to-Begin-Learning-in-2014.jpg');
          background-size: cover;
          width: 100%;
          min-height: 350px;
          text-align: center;
-
-         img{
-            &.banner{
-            }
-         }
          p{
             font-family: $main-font;
             font-size: 30px;
