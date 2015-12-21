@@ -3,7 +3,7 @@
    <article class="new-post-article">
          <h1> Criar novo post </h1>
          <div class="form">
-            <%= form_for(@post) do |f| %>
+            <%= form_for @post, :html => { :multipart => true } do |f| %>
             <%= f.label :title,"Título" %>
             <%= f.text_field :title, class: "form-button" %>
 
@@ -13,6 +13,11 @@
             <%= f.label :tag,"Tag" %>
             <%= f.text_field :tag, class: "form-button" %>
 
+            <%= f.label :remote_image_thumb_url, "Thumbnail image url:" %>
+            <%= f.text_field :remote_image_thumb_url, class: "form-button" %>
+
+            <%= f.label :remote_image_banner_url, "Thumbnail image url:" %>
+            <%= f.text_field :remote_image_banner_url, class: "form-button" %>
 
             <%= f.submit "Salvar", class: "button" %>
             <% end %>
