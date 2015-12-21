@@ -31,29 +31,5 @@ section.header-section{
          }
 
       }
-      article.header-article{
-         background-image: url('http://zarino.co.uk/media/desk-panorama.jpg');
-         background-size: cover;
-         width: 100%;
-         min-height: 350px;
-         text-align: center;
-         padding-top: 1px;
-         margin-top: -1px;
-         .introduction{
-            margin-top: 100px;
-            p{
-               font-family: $main-font;
-               margin: 0 0 40px 0;
-               color: white;
-               font-weight: 900;
-               &.disclaimer{
-                  font-size: 35px;
-               }
-               &.small-disclaimer{
-                  font-size: 20px;
-               }
-            }
-         }
-      }
    }
 }

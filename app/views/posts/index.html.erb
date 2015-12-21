@@ -1,6 +1,13 @@
 <% provide(:title, 'Posts') %>
 <div id="wrapper-posts">
    <div class="box-posts">
+      <article class="header-article">
+
+         <div class="introduction">
+            <p class="disclaimer">A website for developers and geeks!</p>
+            <p class="small-disclaimer">Code news everyday!</p>
+         </div>
+      </article>
       <% @posts.each do |p| %>
          <article class="tile" style="background-image: url(<%= p.image_thumb %>);">
             <span class="post-tag"><%= p.tag %></span>
