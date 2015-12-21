@@ -1,11 +1,10 @@
 <% provide(:title, 'Posts') %>
 <div id="wrapper-posts">
    <div class="box-posts">
-      <article class="header-article">
-
+      <article class="header-article" style="background-image: url(<%= @recent_post.image_banner %>);">
          <div class="introduction">
-            <p class="disclaimer">A website for developers and geeks!</p>
-            <p class="small-disclaimer">Code news everyday!</p>
+            <p class="disclaimer"><%= @recent_post.title %> </p>
+            <p class="small-disclaimer"><%= @recent_post.description %></p>
          </div>
       </article>
       <% @posts.each do |p| %>

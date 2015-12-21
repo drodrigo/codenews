@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
    def index
       @posts = Post.all
+      @recent_post = Post.order("created_at").last
    end
 
    def new
@@ -28,6 +29,6 @@ class PostsController < ApplicationController
    def post_params
       params.require(:post).permit(:title, :body, :tag,
       :image_thumb, :image_banner, :remote_image_thumb_url,
-      :remote_image_banner_url)
+      :remote_image_banner_url, :description)
    end
 end

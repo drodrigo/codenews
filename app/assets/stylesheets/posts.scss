@@ -2,11 +2,13 @@
 /*INDEX PAGE*/
 #wrapper-posts{
    width: 100%;
+   max-width: 1500px;
+   margin: 0 auto;
    .box-posts{
       padding: 0 10px;
       margin: 0 auto;
       article.header-article{
-         background-image: url('http://zarino.co.uk/media/desk-panorama.jpg');
+         //background-image: url('http://zarino.co.uk/media/desk-panorama.jpg');
          background-size: cover;
          width: 100%;
          min-height: 350px;
@@ -32,12 +34,18 @@
       article.tile{
          height: 300px;
          width: 30%;
-         margin-left: 2.5%;
+         margin: 20px 0 20px 2.5%;
          position: relative;
          display: inline-block;
          background-size: cover;
          background-position: center center;
          vertical-align: top;
+         margin-bottom: 10px;
+         -webkit-transition: opacity 0.5s;
+         transition: opacity 0.5s;
+         &:hover{
+            opacity: 0.7;
+         }
          span{
             &.post-tag{
                font-family: $secondary-font;

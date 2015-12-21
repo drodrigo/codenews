@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151220222956) do
+ActiveRecord::Schema.define(version: 20151221024610) do
 
   create_table "posts", force: :cascade do |t|
     t.string   "title"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20151220222956) do
     t.datetime "updated_at",   null: false
     t.string   "image_thumb"
     t.string   "image_banner"
+    t.text     "description"
   end
 
   create_table "users", force: :cascade do |t|
