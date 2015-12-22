@@ -3,8 +3,14 @@ require 'spec_helper'
 describe PostsController, :type => :controller do
    describe 'GET #index' do
       it "should assign posts instance variable to all created posts" do
+         posts = FactoryGirl.create_list(:post, 5)
          get :index
-         expect(assigns(:posts)).to eq(Post.all)
+         expect(assigns(:posts)).to eq(posts)
+      end
+      it "should assign recent post instance variable to the last post created" do
+         posts = FactoryGirl.create_list(:post, 5)
+         get :index
+         expect(assigns(:recent_post)).to eq(posts[4])
       end
    end
    describe 'GET #new' do

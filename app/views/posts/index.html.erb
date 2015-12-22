@@ -8,11 +8,13 @@
          </div>
       </article>
       <% @posts.each do |p| %>
-         <article class="tile" style="background-image: url(<%= p.image_thumb %>);">
-            <span class="post-tag"><%= p.tag %></span>
-            <p class="title"><%= p.title %></p>
-            <span class="created_at"><%= p.created_at.strftime("%b %d, %Y") %></span>
-         </article>
+         <%= link_to p do %>
+            <article class="tile" style="background-image: url(<%= p.image_thumb %>);">
+               <span class="post-tag"><%= p.tag %></span>
+               <p class="title"><%= p.title %></p>
+               <span class="created_at"><%= p.created_at.strftime("%b %d, %Y") %></span>
+            </article>
+         <%end %>
       <% end %>
    </div>
 </div>
