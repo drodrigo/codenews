@@ -6,26 +6,28 @@
    margin: 0 auto;
    .box-posts{
       margin: 0 auto;
-      article.header-article{
-         //background-image: url('http://zarino.co.uk/media/desk-panorama.jpg');
-         background-size: cover;
-         width: 100%;
-         min-height: 350px;
-         text-align: center;
-         padding-top: 1px;
-         margin-top: -1px;
-         .introduction{
-            margin-top: 100px;
-            p{
-               font-family: $main-font;
-               margin: 0 0 40px 0;
-               color: white;
-               font-weight: 900;
-               &.disclaimer{
-                  font-size: 35px;
-               }
-               &.small-disclaimer{
-                  font-size: 20px;
+      a{
+         text-decoration: none;
+         article.header-article{
+            background-size: cover;
+            width: 100%;
+            min-height: 350px;
+            text-align: center;
+            padding-top: 1px;
+            margin-top: -1px;
+            .introduction{
+               margin-top: 100px;
+               p{
+                  font-family: $main-font;
+                  margin: 0 0 40px 0;
+                  color: white;
+                  font-weight: 900;
+                  &.disclaimer{
+                     font-size: 35px;
+                  }
+                  &.small-disclaimer{
+                     font-size: 20px;
+                  }
                }
             }
          }
@@ -77,6 +79,54 @@
             }
          }
       }
+   }
+}
+/**** ****/
+
+/* SHOW PAGE */
+section.show-post{
+   article.header-article{
+      background-size: cover;
+      width: 100%;
+      min-height: 350px;
+      text-align: center;
+      padding-top: 1px;
+      margin-top: -1px;
+      .introduction{
+         margin-top: 100px;
+         p{
+            text-decoration: none;
+            font-family: $main-font;
+            margin: 0 0 40px 0;
+            color: white;
+            font-weight: 900;
+            &.disclaimer{
+               font-size: 35px;
+            }
+            &.small-disclaimer{
+               font-size: 20px;
+            }
+         }
+      }
+   }
+   article.body-article{
+      vertical-align: top;
+      display: inline-block;
+      width: 75%;
+      p{
+         text-align: justify;
+          padding: 0 20px;
+          font-size: 16px;
+          color: $font-color;
+          font-family: $paragraph-font-family;
+          font-weight: 300;
+          line-height: 1.5;
+      }
+   }
+   aside.related-posts{
+      vertical-align: top;
+      display: inline-block;
+      width: 20%;
    }
 }
 /**** ****/

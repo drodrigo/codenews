@@ -1,8 +1,16 @@
 <%= provide(:title, @post.title) %>
 <section class="show-post">
-   <article class="show-article">
-      <p><%= @post.title %></p>
-      <p><%= @post.body %></p>
-      <p><%= @post.tag %></p>
+   <article class="header-article" style="background-image: url(<%= @post.image_banner %>);">
+      <div class="introduction">
+         <p class="disclaimer"><%= @post.title %> </p>
+         <p class="small-disclaimer"><%= @post.description %></p>
+         <p class="small-disclaimer"><%= @post.created_at.strftime("%b %d, %Y") %></p>
+      </div>
    </article>
+   <article class="body-article">
+      <p><%= @post.body %></p>
+   </article>
+   <aside class="related-posts">
+      <p>Related posts: </p>
+   </aside>
 </section>
