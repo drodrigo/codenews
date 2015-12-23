@@ -11,12 +11,12 @@
          article.header-article{
             background-size: cover;
             width: 100%;
-            min-height: 350px;
+            min-height: 450px;
             text-align: center;
             padding-top: 1px;
             margin-top: -1px;
             .introduction{
-               margin-top: 100px;
+               margin-top: 150px;
                p{
                   font-family: $main-font;
                   margin: 0 0 40px 0;
@@ -88,12 +88,12 @@ section.show-post{
    article.header-article{
       background-size: cover;
       width: 100%;
-      min-height: 350px;
+      min-height: 450px;
       text-align: center;
       padding-top: 1px;
       margin-top: -1px;
       .introduction{
-         margin-top: 100px;
+         margin-top: 150px;
          p{
             text-decoration: none;
             font-family: $main-font;
