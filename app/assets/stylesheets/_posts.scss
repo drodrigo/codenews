@@ -127,6 +127,9 @@ section.show-post{
       vertical-align: top;
       display: inline-block;
       width: 20%;
+      p{
+         font-family: $paragraph-font-family;
+      }
    }
 }
 /**** ****/
