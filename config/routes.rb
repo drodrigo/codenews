@@ -1,17 +1,21 @@
 require 'api_constraints'
 
 Rails.application.routes.draw do
-  get 'user/index'
+  get 'tags/index'
 
-  get 'user/new'
+  get 'tags/new'
 
-  get 'user/create'
+  get 'tags/create'
 
-  get 'user/edit'
+  get 'tags/show'
 
-  get 'user/show'
+  get 'tags/index'
 
-  get 'user/destroy'
+  get 'tags/new'
+
+  get 'tags/create'
+
+  get 'tags/index'
 
   get 'static_pages/index'
 
@@ -32,6 +36,7 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
      resources :posts
+     resources :tags
 
   # Example resource route with options:
   #   resources :products do
