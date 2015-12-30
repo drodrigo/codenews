@@ -1,6 +1,9 @@
-<%= form_for @tag do |f| %>
+<%= form_for @tag, :html => { :multipart => true }  do |f| %>
 <%= f.label :name,"Name" %>
 <%= f.text_field :name, class: "form-button" %>
+
+<%= f.label :image,"Image" %>
+<%= f.text_field :remote_image_url, class: "form-button" %>
 
 <%= f.submit "Salvar", class: "button" %>
 <% end %>
