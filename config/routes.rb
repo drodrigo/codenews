@@ -2,6 +2,14 @@ require 'api_constraints'
 
 Rails.application.routes.draw do
 
+  get 'categories/index'
+
+  get 'categories/show'
+
+  get 'categories/new'
+
+  get 'categories/create'
+
   namespace :api, defaults: {format: 'json'} do
      scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
         resources :posts
@@ -16,16 +24,10 @@ Rails.application.routes.draw do
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
-     get 'posts/categories' => 'posts/categories'
+
   # Example resource route (maps HTTP verbs to controller actions automatically):
-     resources :posts do
-        collection do
-           resource  :categories
-        end
-     end
-     resources :tags
-
-
+     resources :categories
+     resources :posts
   # Example resource route with options:
   #   resources :products do
   #     member do

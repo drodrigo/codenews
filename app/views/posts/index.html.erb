@@ -13,7 +13,7 @@
       <% @posts.each do |p| %>
          <%= link_to p do %>
             <article class="tile" style="background-image: url(<%= p.image_thumb %>);">
-               <span class="post-tag"><%= p.tag.name %></span>
+               <span class="post-tag"><%= p.category.name %></span>
                <p class="title"><%= p.title %></p>
                <span class="created_at"><%= p.created_at.strftime("%b %d, %Y") %></span>
             </article>

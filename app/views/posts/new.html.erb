@@ -13,8 +13,8 @@
             <%= f.label :body,"Conteúdo" %>
             <%= f.text_field :body, class: "form-button" %>
 
-            <%= f.label :tag,"Tag" %>
-            <%= f.collection_select :tag_id, Tag.all, :id, :name %>
+            <%= f.label :category,"Tag" %>
+            <%= f.collection_select :category_id, Category.all, :id, :name %>
 
             <%= f.label :remote_image_thumb_url, "Thumbnail image url:" %>
             <%= f.text_field :remote_image_thumb_url, class: "form-button" %>

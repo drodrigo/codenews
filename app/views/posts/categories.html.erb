@@ -1,9 +1,11 @@
 <div id="wrapper-categories-list">
    <div class="box-categories-list">
       <% @categories.each do |c| %>
-         <article class="category-article" style="background-image: url(<%= c.image %>)">
-               <p><%= c.name %></p>
-         </article>
+         <%= link_to c do %>
+            <article class="category-article" style="background-image: url(<%= c.image %>)">
+                  <p><%= c.name %></p>
+            </article>
+         <% end %>
       <% end %>
    </div>
 </div>
