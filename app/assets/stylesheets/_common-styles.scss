@@ -1,7 +1,13 @@
 @import "variables";
-body{
-   background-color: $body-background-color;
+html, body, section.content-section{
+   display: table;
    width: 100%;
    height: 100%;
+}
+body{
+   background-color: $body-background-color;
    margin: 0;
+}
+section.content-section{
+   height: 100%;
 }

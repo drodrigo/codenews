@@ -1,2 +1,12 @@
-<h1>Categories#show</h1>
-<p>Find me in app/views/categories/show.html.erb</p>
+<div id="wrapper-category">
+   <div class="box-category">
+      <% @category_posts.each do |c| %>
+         <%= link_to c do %>
+            <article style="background-image: url(<%= c.image_banner %>);">
+               <p class="title"><%= c.title %> </p>
+               <p class="description"><%= c.description %> </p>
+            </article>
+         <% end %>
+      <% end %>
+   </div>
+</div>
