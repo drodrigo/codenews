@@ -15,6 +15,9 @@ footer.main-footer{
          font-family: $main-font;
          font-size: 22px;
       }
+      a{
+         color: white;
+      }
       i{
          &.fa-heart{
             color: #FF2F2F;
