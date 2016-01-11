@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(version: 20160109195237) do
     t.datetime "updated_at",   null: false
     t.string   "image_thumb"
     t.string   "image_banner"
-    t.text     "description"
+    t.text     "description" 
   end
 
 end
