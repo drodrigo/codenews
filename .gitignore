@@ -15,7 +15,6 @@
 /log/*
 !/log/.keep
 /tmp
-/config/secrets.yml
 
 
 # Ignore local uploaded files
