@@ -19,3 +19,6 @@
 
 # Ignore local uploaded files
 /public/uploads
+
+# Ignore env variables
+/config/application.yml
