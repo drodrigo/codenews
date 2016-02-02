@@ -8,7 +8,7 @@
       </div>
    </article>
    <article class="body-article">
-      <p><%= @post.body %></p>
+      <p><%= sanitize @post.body %></p>
    </article>
    <aside class="related-posts">
       <p>Related posts: </p>
